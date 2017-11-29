@@ -1,0 +1,31 @@
+---
+subject: Holiday Card Submission
+---
+
+<spacer size="16"></spacer>
+
+<container>
+
+  <spacer size="24"></spacer>
+  
+  <row>
+    <columns small="12">
+
+    <p class="lead">Someone submitted a photo to the <a href="$absoluteBaseURL" target="_blank">2017 Holiday Greeting Card Site:</a></p>
+    $SiteConfig.EmailApprovalText
+    <p><strong>From: </strong>$From (<a href="mailto:$EmailAddress">$EmailAddress</a>)</p>
+    <a href="{$Link}"><img src="$Photo.SetWidth(600).AbsoluteURL" /></a>
+    <spacer size="16"></spacer>
+
+    <center>
+      <button href="{$CMSLink}">Approve or deny this photo here</button>
+    </center>
+
+
+    <p><a href="https://www.uiowa.edu" target="_blank">The University of Iowa</a></p>
+
+    <spacer size="16"></spacer>
+
+    </columns>
+  </row>
+</container>
