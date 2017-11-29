@@ -1,0 +1,31 @@
+---
+subject: $SiteConfig.EmailApprovalSubject
+---
+
+<spacer size="16"></spacer>
+
+<container>
+
+  <spacer size="24"></spacer>
+  
+  <row>
+    <columns small="12">
+
+    <p class="lead">$SiteConfig.EmailApprovalSubject</p>
+    $SiteConfig.EmailApprovalText
+
+    <a href="{$Link}"><img src="$Photo.SetWidth(600).AbsoluteURL" /></a>
+    <spacer size="16"></spacer>
+
+    <center>
+      <button href="{$Link}">View or share this card on the web:</button>
+    </center>
+
+
+    <p><a href="https://www.uiowa.edu" target="_blank">The University of Iowa</a></p>
+
+    <spacer size="16"></spacer>
+
+    </columns>
+  </row>
+</container>
