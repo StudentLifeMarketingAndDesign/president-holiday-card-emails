@@ -30,7 +30,7 @@ $pre-color: #ff6908;
 $global-width: 580px;
 $global-width-small: 95%;
 $global-gutter: 16px;
-$body-background: $light-gray;
+$body-background: $white;
 $container-background: $white;
 $global-padding: 16px;
 $global-margin: 16px;
@@ -106,11 +106,11 @@ $button-font-size: (
   default: 16px,
   large: 20px,
 );
-$button-color: #111;
+$button-color: #fff;
 $button-color-alt: $medium-gray;
 $button-font-weight: normal;
 $button-margin: 0 0 $global-margin 0;
-$button-background: #f0b54a;
+$button-background: #222;
 $button-border: 2px solid $button-background;
 $button-radius: $global-radius;
 $button-rounded: $global-rounded;

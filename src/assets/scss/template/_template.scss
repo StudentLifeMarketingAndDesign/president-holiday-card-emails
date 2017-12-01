@@ -5,7 +5,7 @@
 body,
 html, 
 .body {
-  background: #f3f3f3 !important;
+
 }
 
 .container.header {
@@ -42,16 +42,19 @@ html,
 table.button.facebook table td {
   background: #3B5998 !important;
   border-color: #3B5998;
+  color: white;
 }
 
 table.button.twitter table td {
   background: #1daced !important;
   border-color: #1daced;
+  color: white;
 }
 
 table.button.google table td {
   background: #DB4A39 !important;
   border-color: #DB4A39;
+  color: white;
 }
 
 .wrapper.secondary {

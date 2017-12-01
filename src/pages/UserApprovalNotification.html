@@ -11,21 +11,27 @@ subject: $SiteConfig.EmailApprovalSubject
   <row>
     <columns small="12">
 
-    <p class="lead">$SiteConfig.EmailApprovalSubject</p>
-    $SiteConfig.EmailApprovalText
+      <p class="lead">$SiteConfig.EmailApprovalSubject</p>
+      $SiteConfig.EmailApprovalText
 
-    <a href="{$Link}"><img src="$Photo.SetWidth(600).AbsoluteURL" /></a>
-    <spacer size="16"></spacer>
+      <a href="{$AbsoluteLink}"><img src="$Photo.SetWidth(600).AbsoluteURL" /></a>
+      <spacer size="16"></spacer>
 
-    <center>
-      <button href="{$Link}">View or share this card on the web:</button>
-    </center>
-
-
-    <p><a href="https://www.uiowa.edu" target="_blank">The University of Iowa</a></p>
-
-    <spacer size="16"></spacer>
-
+      <center>
+        <button href="{$AbsoluteLink}">View on the web</button>
+      </center>
+        <spacer size="16"></spacer>
+        <h5 class="text-center">Share your post:</h5>
+      
     </columns>
   </row>
+  <row>
+    <columns small="6">
+      <button class="facebook expand" href="https://www.facebook.com/sharer/sharer.php?u={$AbsoluteLink.ATT}">Facebook</button>
+    </columns>
+    <columns small="6">
+      <button class="twitter expand" href="https://twitter.com/intent/tweet?text={$AbsoluteLink.ATT}">Twitter</button>
+    </columns>
+  </row>
+  {{> footer}}
 </container>
